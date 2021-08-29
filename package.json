@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "express": "^4.17.1",
+    "install": "^0.13.0",
+    "mongoose": "^6.0.2",
+    "node": "^16.6.1"
+  }
+}
