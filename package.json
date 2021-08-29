@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "date-fns": "^2.23.0",
     "express": "^4.17.1",
     "install": "^0.13.0",
     "mongoose": "^6.0.2",
