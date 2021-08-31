@@ -2,7 +2,7 @@ const { Thought, User } = require("../models");
 
 const userController = {
   getAllUsers(req, res) {
-    Thought.find({})
+    User.find({})
       .then((userData) => res.json(userData))
       .catch((err) => {
         console.log(err);
@@ -49,7 +49,7 @@ const userController = {
   },
 
   deleteUser({ params }, res) {
-    User.findOneAndDelete({ _id: params.is })
+    User.findOneAndDelete({ _id: params.id })
       .then((userData) => {
         if (!userData) {
           res.status(404).json({ message: "No ID found" });
